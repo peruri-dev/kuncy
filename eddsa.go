@@ -29,7 +29,7 @@ func testSignVerify(skSignPem []byte, pkSignPem []byte, kid string) {
 	// Create a new JWT
 	token, err := jwt.NewBuilder().
 		IssuedAt(time.Now()).
-		Subject("INAPAS99ID").
+		Subject("PRRID99ID").
 		Expiration(time.Now().Add(15*time.Minute)).
 		JwtID(srg()).
 		Claim("type", "assertion").

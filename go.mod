@@ -1,6 +1,6 @@
-module github.com/inadigital-inapas/kuncy
+module github.com/peruri-dev/kuncy
 
-go 1.23.2
+go 1.24.0
 
 require (
 	github.com/google/uuid v1.6.0

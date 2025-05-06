@@ -12,9 +12,9 @@ import (
 )
 
 func main() {
-	fmt.Println("+++++++++++++++++++++++++++++++++")
-	fmt.Println("Kuncy - INApas key pair generator")
-	fmt.Println("+++++++++++++++++++++++++++++++++")
+	fmt.Println("+++++++++++++++++++++++++++++++++++")
+	fmt.Println("Kuncy - PeruriID key pair generator")
+	fmt.Println("+++++++++++++++++++++++++++++++++++")
 	fmt.Print("\n")
 
 	var err error

@@ -48,10 +48,10 @@ func testEncECDSA(skEncPem []byte, pkEncPem []byte, kid string) {
 	type selfData struct {
 		Name     string `json:"string"`
 		NIK      string `json:"nik"`
-		INApasID string `json:"inapasID"`
+		PeruriID string `json:"PeruriID"`
 	}
 
-	payload, err := json.Marshal(selfData{Name: "Fulan", NIK: "1000200030004000", INApasID: "INAPAS99ID"})
+	payload, err := json.Marshal(selfData{Name: "Fulan", NIK: "1000200030004000", PeruriID: "PRRID99ID"})
 	if err != nil {
 		panic(err)
 	}
@@ -128,7 +128,7 @@ func testSignECDSA(skSignPem []byte, pkSignPem []byte, kid string) {
 	// Create a new JWT
 	token, err := jwt.NewBuilder().
 		IssuedAt(time.Now()).
-		Subject("INAPAS99ID").
+		Subject("PRRID99ID").
 		Expiration(time.Now().Add(15*time.Minute)).
 		JwtID(srg()).
 		Claim("type", "assertion").
