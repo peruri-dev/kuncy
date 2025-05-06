@@ -1,2 +1,4 @@
 dist
 kuncy
+*.pem
+jwks.json
